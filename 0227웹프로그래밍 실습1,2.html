@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 작성하기</title>
+    <style>
+        #a {
+            background-color: yellow;
+        }
+        .menu li {
+            list-style: none;
+            float : left;
+            padding : 0 20px;
+            background-color: yellowgreen;
+            color: white;
+        }
+        .menu li:hover {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th id="a">시간</th>
+                <th>월요일</th>
+                <th>화요일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="a">10:00~</th>
+                <th rowspan="3">웹디자인</th>
+                <th rowspan="3">웹기초</th>
+            </tr>
+            <tr>
+                <th id="a">11:00~</th>
+            </tr>
+            <tr>
+                <th id="a">12:00~</th>
+            </tr>
+            <tr>
+                <th id="a">1:00~</th>
+                <th colspan="2">점심시간</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>Espresso</li>
+            <li>Cappuccino</li>
+            <li>Cafe Latte</li>
+            <li>F.A.Q</li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
